@@ -1,0 +1,44 @@
+plugins {
+    id 'java'
+}
+
+group 'com.playvox.api.test'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+ext {
+    karateJU5Version = '1.1.0'
+    karateVersion = '0.9.2'
+    cucumberReportingVersion = '5.6.1'
+}
+
+dependencies {
+    testImplementation "com.intuit.karate:karate-junit5:${karateJU5Version}"
+    testImplementation "com.intuit.karate:karate-netty:${karateVersion}"
+    testImplementation "com.intuit.karate:karate-apache:${karateVersion}"
+    testImplementation "net.masterthought:cucumber-reporting:${cucumberReportingVersion}"
+}
+
+sourceSets {
+    test {
+        resources {
+            srcDir file('src/test/java')
+            exclude '**/*.java'
+        }
+    }
+}
+
+test {
+    useJUnitPlatform()
+    systemProperty "karate.options", System.properties.getProperty("karate.options")
+    systemProperty "karate.env", System.properties.getProperty("karate.env")
+    outputs.upToDateWhen { false }
+}
+
+task karateDebug(type: JavaExec) {
+    classpath = sourceSets.test.runtimeClasspath
+    main = 'com.intuit.karate.cli.Main'
+}

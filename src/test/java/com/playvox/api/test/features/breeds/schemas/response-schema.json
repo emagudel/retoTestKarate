@@ -1,0 +1,50 @@
+{
+    "data": {
+        "alt_names": "##string",
+        "experimental": "#number? _ == 0 || _ ==1",
+        "hairless": "#number? _ == 0 || _ ==1",
+        "hypoallergenic": "#number? _ == 0 || _ ==1",
+        "id": "#string",
+        "life_span": "#string",
+        "name": "#string",
+        "natural": "#number? _ == 0 || _ ==1",
+        "origin": "#string",
+        "rare": "#number? _ == 0 || _ ==1",
+        "reference_image_id": "##string",
+        "rex": "#number? _ == 0 || _ ==1",
+        "short_legs": "#number? _ == 0 || _ ==1",
+        "suppressed_tail": "#number? _ == 0 || _ ==1",
+        "temperament": "#string",
+        "wikipedia_url": "##string",
+        "weight_imperial": "##string",
+        "weight": {
+            "imperial": "#string",
+            "metric": "#string"
+        },
+        "cfa_url": "##string",
+        "vetstreet_url": "##string",
+        "vcahospitals_url": "##string",
+        "country_codes": "#string",
+        "country_code": "#string",
+        "description": "#string",
+        "indoor": "#number",
+        "lap": "##number",
+        "adaptability": "#number? _ >= 0 && _ <= 5",
+        "affection_level": "#number? _ >= 0 && _ <= 5",
+        "child_friendly": "#number? _ >= 0 && _ <= 5",
+        "bidability": "##number",
+        "cat_friendly": "##number",
+        "dog_friendly": "#number? _ >= 0 && _ <= 5",
+        "energy_level": "#number? _ >= 0 && _ <= 5",
+        "grooming": "#number? _ >= 0 && _ <= 5",
+        "health_issues": "#number? _ >= 0 && _ <= 5",
+        "intelligence": "#number? _ >= 0 && _ <= 5",
+        "shedding_level": "#number? _ >= 0 && _ <= 5",
+        "social_needs": "#number? _ >= 0 && _ <= 5",
+        "stranger_friendly": "#number? _ >= 0 && _ <= 5",
+        "vocalisation": "#number? _ >= 0 && _ <= 5",
+        "image": "##object"
+    }
+}
+
+

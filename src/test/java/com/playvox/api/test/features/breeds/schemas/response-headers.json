@@ -1,0 +1,19 @@
+{
+  "x-dns-prefetch-control": "#[] #string",
+  "x-frame-options": "#[] #string",
+  "strict-transport-security": "#[] #string",
+  "x-download-options": "#[] #string",
+  "x-content-type-options": "#[] #string",
+  "x-xss-protection": "#[] #string",
+  "vary": "#[] #string",
+  "pagination-count": "##[] #string",
+  "pagination-page": "##[] #string",
+  "pagination-limit": "##[] #string",
+  "access-control-expose-headers": "##[] #string",
+  "content-type": ["application/json; charset=utf-8"],
+  "x-response-time": "#[] #string",
+  "X-Cloud-Trace-Context": "#[] #string",
+  "Date": "#[] #string",
+  "Server": ["Google Frontend"],
+  "Content-Length": "#[] #string"
+}
