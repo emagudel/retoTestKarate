@@ -15,7 +15,7 @@ public class ParallelTest {
 
         @Test
         void testParallel() {
-            Results results = Runner.path("classpath:com/playvox/api/test/features").parallel(4);
+            Results results = Runner.path("classpath:com/api/test/features").parallel(4);
             assertEquals(0, results.getFailCount(), results.getErrorMessages());
         }
 
